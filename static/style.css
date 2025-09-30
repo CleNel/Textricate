@@ -1,0 +1,10 @@
+#pdf-container {
+    overflow: auto;
+    max-width: 90vw;
+    max-height: 80vh;
+    border: 3px solid black;
+}
+
+#pdf-canvas {
+    display: block;
+}
