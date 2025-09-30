@@ -19,7 +19,7 @@ A Flask application for previewing PDFs, drawing bounding boxes on them, and ext
 
 ```bash
 git clone https://github.com/CleNel/Textricate.git
-cd pdf-box-drawer
+cd Textricate
 ```
 
 ### 2. Create a virtual environment
@@ -92,6 +92,19 @@ pdf-box-drawer/
 
 * `.env` contains sensitive information (like `FLASK_SECRET_KEY`) and should **never** be committed to GitHub.
 * `.gitignore` prevents sensitive files and large uploads from being tracked.
+
+---
+
+## Known Bugs
+
+Here are some known issues with this project:
+
+- **PDF preview cropping issue**: When uploading certain PDFs, previews may appear cropped.
+- **UI Issues**: Boxes currently cannot be moved around after being made and for some PDFs the UI is too small, so the text isn't legible.
+- **File Reading**: If a file has a space character, " ", than the program fails to read it.
+- **Large file upload delays**: Uploading PDFs larger than ~10MB can take time, due to server processing. Consider optimizing your PDFs before upload.
+- **Browser compatibility**: The app has been tested primarily on Chrome and Firefox. Other browsers may not work as expected.
+- **Mobile responsiveness**: The UI is not fully optimized for mobile devices.
 
 ---
 
